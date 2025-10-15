@@ -282,13 +282,10 @@ knowledge-base-search-engine/
 
 ## 🎥 Demo Video
 
-[Link to demo video showing:]
+https://github.com/user-attachments/assets/3ee016d3-f5f1-449e-b1ef-b20f5840b602
 
-- Document upload process
-- Asking questions with RAG enabled
-- Viewing source citations
-- Comparing RAG vs non-RAG responses
-- Theme switching
+
+
 
 ## 🐛 Troubleshooting
 
