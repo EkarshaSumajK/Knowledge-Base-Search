@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# ChromaDB data
+/chroma_data
+*.chroma
+
+# Uploaded documents (optional - uncomment if you don't want to commit uploads)
+# /uploads
+
+# AI Elements cache
+.ai-elements

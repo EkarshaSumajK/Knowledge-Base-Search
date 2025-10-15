@@ -1,0 +1,57 @@
+Knowledge Base Search Engine - Technical Overview
+
+This is a sample document for testing the RAG-powered Knowledge Base Search Engine.
+
+Project Overview:
+The Knowledge Base Search Engine is a sophisticated document retrieval and question-answering system built with Next.js, AI SDK, and ChromaDB. It implements Retrieval-Augmented Generation (RAG) to provide accurate, context-aware answers based on uploaded documents.
+
+Key Features:
+1. Document Upload: Users can upload PDF, TXT, and DOCX files
+2. Semantic Search: Uses OpenAI embeddings for semantic similarity matching
+3. AI Synthesis: GPT models synthesize answers from retrieved documents
+4. Source Citations: Automatically cites source documents in responses
+5. Dark/Light Mode: Full theme support with system preference detection
+6. Real-time Streaming: Responses stream in real-time using AI SDK
+
+Technical Architecture:
+- Frontend: Next.js 15 with React 19 and Tailwind CSS
+- AI Integration: Vercel AI SDK with OpenAI models
+- Vector Database: ChromaDB for embedding storage and retrieval
+- Document Processing: Custom pipeline for text extraction and chunking
+- Theme System: next-themes for seamless dark/light mode switching
+
+How RAG Works:
+1. Documents are uploaded and processed
+2. Text is extracted and split into chunks
+3. Each chunk is converted to embeddings using OpenAI
+4. Embeddings are stored in ChromaDB vector database
+5. When a user asks a question, it's converted to an embedding
+6. Similar document chunks are retrieved using cosine similarity
+7. Retrieved chunks are provided as context to the LLM
+8. The LLM synthesizes an answer based on the context
+9. Sources are cited in the response
+
+Supported Models:
+- GPT-4o: Most capable model for complex reasoning
+- GPT-4o Mini: Faster and more cost-effective
+- GPT-3.5 Turbo: Budget-friendly option for simple queries
+
+Use Cases:
+- Internal knowledge base search for companies
+- Research paper analysis and question answering
+- Documentation search and synthesis
+- Legal document review and analysis
+- Educational content exploration
+
+Performance Considerations:
+- Chunk size affects retrieval accuracy (default: 1000 chars)
+- Overlap ensures context continuity (default: 200 chars)
+- Top-K parameter controls number of retrieved chunks (default: 5)
+- Embedding model choice impacts speed and accuracy
+
+Future Enhancements:
+- Multi-modal support (images, tables)
+- Advanced filtering and metadata search
+- Conversation memory and follow-up questions
+- Batch document processing
+- Analytics and usage tracking
