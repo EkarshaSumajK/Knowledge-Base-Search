@@ -119,6 +119,7 @@ Remember: Your response should feel natural and authoritative, as if you're an e
     messages: convertToModelMessages(messages),
     system: systemPrompt,
     maxTokens: 65525,
+    temperature: 0,
   });
 
   // Send sources back to the client if RAG was used
